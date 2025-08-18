@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
 
 	"github.com/joho/godotenv"
 )
@@ -13,6 +14,14 @@ func main() {
 	}
 
 	config := loadConfig()
+
+	app := &application{
+		config: config,
+	}
+
+	router := app.router()
+
+	http.ListenAndServe(":4000", router)
 
 	fmt.Println(config)
 
