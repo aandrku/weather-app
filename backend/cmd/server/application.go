@@ -7,12 +7,12 @@ import (
 
 type application struct {
 	config Config
+	client *http.Client
 }
 
 func loadConfig() Config {
 	var c Config
 
-	c.client = &http.Client{}
 	c.weatherAPIKey = os.Getenv("WEATHER_API_KEY")
 	c.apiURL = os.Getenv("API_URL")
 
@@ -20,7 +20,6 @@ func loadConfig() Config {
 }
 
 type Config struct {
-	client        *http.Client
 	weatherAPIKey string
 	apiURL        string
 }

@@ -17,6 +17,7 @@ func main() {
 
 	app := &application{
 		config: config,
+		client: &http.Client{},
 	}
 
 	router := app.router()

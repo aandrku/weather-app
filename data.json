@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": -70,
+    "lat": 40
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 66.45,
+    "feels_like": 65.95,
+    "temp_min": 66.45,
+    "temp_max": 66.45,
+    "pressure": 1021,
+    "humidity": 67,
+    "sea_level": 1021,
+    "grnd_level": 1021
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 21.39,
+    "deg": 49,
+    "gust": 21.5
+  },
+  "clouds": {
+    "all": 93
+  },
+  "dt": 1755560346,
+  "sys": {
+    "country": "US",
+    "sunrise": 1755510889,
+    "sunset": 1755559986
+  },
+  "timezone": -18000,
+  "id": 4944903,
+  "name": "Nantucket",
+  "cod": 200
+}
